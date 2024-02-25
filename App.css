@@ -1,0 +1,196 @@
+
+
+.App {
+  text-align: center;
+  background-image: url('/Users/krystalqiao/Downloads/Untitled_Artwork 7.png'); /* Path to your background image */
+  background-size: cover; 
+  background-position: center; 
+  color: #4B0082; 
+  font-family: 'Pacifico', cursive; 
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+
+.App::after {
+  content: 'Welcome to your Digital Wardrobe Manager!'; 
+  position: absolute; 
+  bottom: 10px; 
+  right: 30px; 
+  width: 150px; 
+  padding: 10px; 
+  background-color: #ffffff; 
+  border: 2px solid #4B0082; 
+  border-radius: 10px; 
+  z-index: 1; 
+  color: #4B0082; /* Set text color */
+  font-size: 14px; /* Set font size */
+  text-align: center; /* Center-align the text */
+  margin-bottom: 180px;
+  margin-right: 300px;
+}
+
+.App::after::before {
+  content: 'Welcome to your Digital Wardrobe Manager!'; 
+  position: absolute; 
+  bottom: 50%; 
+  right: 50%; 
+  transform: translate(50%, 50%); 
+  color: #4B0082; 
+  font-size: 14px;
+  text-align: center;
+  font-size: 14px; 
+}
+
+.App > *:first-child {
+  margin-top: 6px;
+}
+
+/* Enhance the logo with a subtle shadow */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Soften the header with a gradient and shadow */
+.App-header {
+  background: linear-gradient(135deg, #967BB6 0%, #b8a0d1 100%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+/* Subtle hover effect for links */
+.App-link {
+  color: #F3E6FF;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #ffffff;
+}
+
+/* Outfit images with elegant shadows */
+.outfit-image {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Refined outfit content styling */
+.outfit-content {
+  border: 2px solid #c8a1fb;
+  padding: 15px;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(150, 123, 182, 0.2);
+}
+
+/* Menu button with a subtle hover effect */
+.menu {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  background-color: #BFA4FF;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.menu:hover {
+  transform: scale(1.1);
+}
+
+/* Sorting menu styling with refined touches */
+.sort-menu {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  font-size: 16px;
+  margin-top: 90px;
+}
+
+.sort-menu select {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 2px solid #DEC4FF;
+  background-color: #e6e0f8;
+  color: #4B0082;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 10px;
+}
+
+/* Enhanced outfit tags */
+.outfit-tags p, .outfit-tag {
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #4B0082;
+  font-size: 10px;
+}
+
+
+.outfit-image {
+  margin-right: 1px; /* Add margin between images */
+}
+
+.outfit-tag::before {
+  content: '•';
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+.outfit-label {
+  margin-bottom: 1px;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+.outfit-content {
+  margin-bottom: 1px; /* Add margin at the bottom */
+}
+
+.tabs button {
+  font-family: 'Pacifico', cursive;
+  padding: 10px 20px;
+  margin: 4px;
+}
+
+.outfit {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
